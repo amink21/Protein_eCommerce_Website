@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProteinPros</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+          <div class="logo">
+            <a href="#hero">ProteinPros</a>
+          </div>
+          <div class="user-links">
+            <a href="#"><i class="fas fa-user"></i> <span class="nav-text">Account</span></a>
+            <a href="#" onclick="openCartModal()"><i class="fas fa-shopping-cart"></i> <span id="cart-count" class="nav-text">Cart</span></a>
+          </div>
+        </div>
+        <nav>
+          <div class="container">
+            <ul>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+  <div id="cartModal" class="modal">
+    <div id="cart-container" class="modal-content">
+      <span class="close" onclick="closeCartModal()">&times;</span>
+      <h2 class="cartHeader">Your Cart</h2>
+      <div id="cart-items"></div>
+      <p>Total: <span id="cart-total">$0.00</span></p>
+      <button onclick="checkout()" class="cart-btn">Checkout</button>
+    </div>
+  </div>  
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <h2>
+        <span class="letter">W</span><span class="letter">e</span><span class="letter">l</span><span class="letter">c</span><span class="letter">o</span><span class="letter">m</span><span class="letter">e</span>
+        <span class="letter"> T</span><span class="letter">o</span>
+        <span class="letter"> P</span><span class="letter">r</span><span class="letter">o</span><span class="letter">t</span><span class="letter">e</span><span class="letter">i</span><span class="letter">n</span><span class="letter">P</span><span class="letter">r</span><span class="letter">o</span><span class="letter">s</span>
+    </h2>
+      <p>Protein is the building block of muscle and strength. <br>
+        <span class="different-font">Embrace it,</span><br> 
+        nourish it, <br>
+        <span class="different-font">and watch yourself grow.</span><br>
+        Your destination for high-quality supplements and fitness essentials!</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="container">
+      <h2 class="featured">Featured Products</h2>
+
+      <ul id="product-list"></ul>      
+    </div>
+  </section>
+
+
+  <section class="testimonial-section">
+    <h2>Testimonials</h2>
+    <div class="testimonial-center container">
+      <div class="testimonial">
+        <span class="quote">&ldquo;</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,
+          fugiat labore. Veritatis et omnis consequatur.
+        </p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+        </div>
+        <h4>John Doe</h4>
+      </div>
+      <div class="testimonial">
+        <span class="quote">&ldquo;</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,
+          fugiat labore. Veritatis et omnis consequatur.
+        </p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+        </div>
+        <h4>John Doe</h4>
+      </div>
+      <div class="testimonial">
+        <span class="quote">&ldquo;</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis,
+          fugiat labore. Veritatis et omnis consequatur.
+        </p>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+        </div>
+        <h4>John Doe</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to ProteinPros, your ultimate destination for top-quality gym supplements and fitness accessories. At ProteinPros, we are passionate about helping you reach your fitness goals by providing you with the best products and expert advice.</p>
+      <p>Our mission is to empower you to live a healthier, stronger life through proper nutrition and exercise. We believe that everyone deserves access to high-quality supplements and fitness gear, no matter their fitness level or goals.</p>
+      <p>With a wide range of products, including protein powders, creatine supplements, workout apparel, and more, we have everything you need to fuel your fitness journey. Our team of fitness enthusiasts is dedicated to helping you find the right products and achieve your fitness goals.</p>
+      <p>Join the ProteinPros community today and take the first step towards a healthier, happier you!</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: info@example.com</p>
+      <p>Phone: 123-456-7890</p>
+      <p>Address: 123 Main St, City, Country</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 ProteinPros. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
